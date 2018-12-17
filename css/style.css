@@ -647,6 +647,16 @@ input[type="radio"].visually-hidden {
 .basket-full-delete {
   background-color: inherit;
   border: none;
+  padding: 0;
+}
+
+.basket-full-description {
+  width: 220px;
+}
+
+.basket-full-weight {
+  width: 151px;
+  text-align: center;
 }
 
 .basket-full-price {
