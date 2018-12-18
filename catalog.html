@@ -5,7 +5,7 @@
     <title>Gllacy-каталог мороженого</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header wrapper-page">
@@ -66,24 +66,25 @@
               <div class="popup basket-full-list">
                 <table class="basket-full-item">
                   <tr>
-                    <td>
-                      <button class="basket-full-delete" type="button">
+                    <td class="basket-full-delete">
+                      <button class="basket-full-delete-button" type="button">
                         <span class="visually-hidden">Удалить</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
                       </button>
-                    <td>
-                    <td><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                    </td>
+                    <td class="basket-full-photo"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                     <td class="basket-full-description">Пломбир с апельсиновым джемом</td>
                     <td class="basket-full-weight">1,5 кг х <span class="basket-full-price">200 руб.</span></td>
                     <td class="basket-full-cost">300 руб.</td>
                   </tr>
                   <tr>
-                    <td>
-                      <button class="basket-full-delete" type="button"><span class="visually-hidden">Удалить</span>
+                    <td class="basket-full-delete">
+                      <button class="basket-full-delete-button" type="button"><span class="visually-hidden">Удалить</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-                      </button><td>
-                    <td><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                      </button>
+                    </td>
+                    <td class="basket-full-photo"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td class="basket-full-description">Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td class="basket-full-weight">1,5 кг х <span class="basket-full-price">300 руб.</span></td>
                     <td class="basket-full-cost">450 руб.</td>
                   </tr>
@@ -107,9 +108,9 @@
         </div>
       </nav>
     </header>
-    <main class="container wrapper-page">
-      <h1 class="page-title">Сливочное мороженое</h1>
-      <section class="filters">
+    <main class="container">
+      <h1 class="page-title wrapper-page">Сливочное мороженое</h1>
+      <section class="filters wrapper-page">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-sorting-container">
@@ -129,8 +130,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+              <div class="range-toggle range-toggle-min" tabindex="0"></div>
+              <div class="range-toggle range-toggle-max" tabindex="0"></div>
             </div>
           </fieldset>
           <fieldset class="filter-fatty-container">
